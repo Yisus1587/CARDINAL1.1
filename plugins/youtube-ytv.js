@@ -27,7 +27,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
   }
   if ((!(source instanceof ArrayBuffer) || !link || !res.ok) && !isLimit) throw '❎ Error: ' + (lastError || 'no puedo descargar el video')
 
-m.reply(isLimit ? ` ≡  *FG MUSIC*
+m.reply(isLimit ? ` ≡  *CARDINAL*
 ▢ *📌Título* : ${title}
 ▢ *⚖️Peso* : ${video.fileSizeH}
 ▢ *El archivo supera el límite de descarga*
