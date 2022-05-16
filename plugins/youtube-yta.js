@@ -27,7 +27,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
   }
   if ((!(source instanceof ArrayBuffer) || !link || !res.ok) && !isLimit) throw '❎ Error: ' + (lastError || 'no puedo descargar el audio')
  
- m.reply(isLimit ? `≡ *FG MUSIC* 
+ m.reply(isLimit ? `≡ *CARDINAL* 
   
 ▢ *📌Titulo:* ${title}
 ▢ *⚖️ Peso:* ${audio.fileSizeH}
