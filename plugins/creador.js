@@ -1,0 +1,19 @@
+function handler(m) {
+  /*const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+  this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)*/
+  
+  m.reply(`
+*≡ Crédito*
+  *YISUS1587*
+`) 
+
+
+}
+
+handler.help = ['creador']
+handler.tags = ['main']
+
+handler.command = ['owner', 'creator', 'creador', 'dueño', 'fgowner'] 
+
+
+export default handler
