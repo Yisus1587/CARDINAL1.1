@@ -66,10 +66,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
     ['⌬ Grupos', `${usedPrefix}gpdylux`]
 ], m)*/
 
-conn.sendHydrated(m.chat, infobt, igfg, '', 'https://youtube.com/fg98f', 'YouTube', null, null, [
-      ['ꨄ︎ Apoyar', `${usedPrefix}donar`],
-      ['⌬ Grupos', `${usedPrefix}gpdylux`],
-      ['✆ Owner', `${usedPrefix}fgowner`]
+conn.sendHydrated(m.chat, infobt, igfg, '', '', '', null, null, [
+      ['', `${usedPrefix}donar`],
+      ['', `${usedPrefix}gpdylux`],
+      ['', `${usedPrefix}fgowner`]
     ], m)
 }
 handler.help = ['Info']
