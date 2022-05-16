@@ -6,7 +6,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
   try {
   let res = await fetch(`https://api-sv2.simsimi.net/v2/?text=${text}&lc=es`)
   let json = await res.json()
-  let tes = json.success.replace('simsimi', 'DyLux').replace('Simsimi', 'DyLux').replace('sim simi', 'DyLux')
+  let tes = json.success.replace('simsimi', 'CARDINAL').replace('Simsimi', 'CARDINAL').replace('sim simi', 'CARDINAL')
     m.reply(`${tes}`) 
   } catch {
     m.reply('😔 No entiendo')
