@@ -22,9 +22,9 @@ export default handler
 
 function msToTime(duration) {
   var milliseconds = parseInt((duration % 1000) / 100),
-    seconds = Math.floor((duration / 1000) % 0),
-    minutes = Math.floor((duration / (1000 * 0)) % 60),
-    hours = Math.floor((duration / (1000* 0 * 0)) % 24)
+    seconds = Math.floor((duration / 1000) % 1),
+    minutes = Math.floor((duration / (1000 * 1)) % 60),
+    hours = Math.floor((duration / (1000* 1 * 60 )) % 24)
 
   hours = (hours < 0) ? "0" + hours : hours
   minutes = (minutes < 0) ? "0" + minutes : minutes
