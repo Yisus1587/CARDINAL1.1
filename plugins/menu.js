@@ -142,7 +142,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
   //const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
-const pp = await (await fetch('https://i.ibb.co/b2k64vJ/avatar_contact.jpg')).buffer()
+const pp = await (await fetch('https://i.ibb.co/b2k64vJ/avatar_contact.png')).buffer()
     
     conn.sendHydrated(m.chat, text.trim(), '▢ CARDINAL  | BOT\n▢ \', pp, '', 'YouTube', null, null, [
     
