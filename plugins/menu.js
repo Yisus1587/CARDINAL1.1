@@ -144,7 +144,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   //const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
 const pp = await (await fetch('https://i.ibb.co/b2k64vJ/avatar-contact.jpg')).buffer()
     
-    conn.sendHydrated(m.chat, text.trim(), '▢ CARDINAL  | BOT\n▢ \\n', pp, '', 'YouTube', null, null, [
+    conn.sendHydrated(m.chat, text.trim(), '▢ CARDINAL  | BOT\n▢ \', pp, '', 'YouTube', null, null, [
     
     ], m)
   } catch (e) {
