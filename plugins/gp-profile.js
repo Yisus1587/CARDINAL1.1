@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command}) => {
 
 
-let pp = 'https://i.ibb.co/V2nDN32/avatar-contact.jpg'
+let pp = 'https://i.ibb.co/b2k64vJ/avatar-contact.jpg'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
 try {
